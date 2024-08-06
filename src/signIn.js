@@ -23,7 +23,7 @@ async function sign_in() {
     headers,
     method: 'POST',
     credentials: 'include'
-  }).then((res) => res.json());
+  }).then((res) => res);
 
   if (res.err_no !== 0) return Promise.reject('签到异常！');
 
