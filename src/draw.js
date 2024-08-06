@@ -23,7 +23,7 @@ async function draw() {
     headers,
     method: 'POST',
     credentials: 'include'
-  }).then((res) => res.json());
+  }).then((res) => res);
 
   if (res.err_no !== 0) return Promise.reject('免费抽奖异常，接口调用异常！');
 
